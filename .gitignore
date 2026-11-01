@@ -1,0 +1,7 @@
+# Zugangsdaten und Laufzeitdaten der Installation, nie einchecken
+mailstore-config.xml
+mailstore-key.bin
+mailstore_alert_state.json
+mailstore_escalation_state.json
+*.bin
+*.key
