@@ -1,5 +1,7 @@
 # MailStore Job Monitoring
 
+[![Buy Me a Coffee](https://img.shields.io/badge/Buy%20Me%20a%20Coffee-unterst%C3%BCtzen-FFDD00?logo=buymeacoffee&logoColor=black)](https://buymeacoffee.com/quentyn83)
+
 PowerShell-Paket, das MailStore-Server-Archivierungsjobs überwacht, bei hängenden Jobs alarmiert und stufenweise eingreift. Alarme laufen über den Windows-Ereignisprotokoll (Event Log), sodass jedes Monitoring-Tool (RMM, Zabbix, PRTG, …) sie auswerten kann. Kein SMTP, keine Cloud.
 
 > **Status: in Arbeit.** Die Überwachung (Monitor) ist im Einsatz getestet. Die Eskalation ist es nur teilweise, siehe [Bekannte Einschränkungen](#bekannte-einschränkungen) und [Warnung zu taskkill](#warnung-taskkill-und-safe-mode).
@@ -125,6 +127,12 @@ Unregister-ScheduledTask -TaskName 'MailStore Job Eskalation' -Confirm:$false
 Remove-EventLog -Source 'MailStore Monitor'
 Remove-Item -Recurse -Force <Installationspfad>
 ```
+
+## Unterstützen
+
+Wenn dir das Projekt hilft und du mir einen Kaffee ausgeben möchtest, freue ich mich sehr:
+
+<a href="https://buymeacoffee.com/quentyn83"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me a Coffee" height="45"></a>
 
 ## Lizenz
 
